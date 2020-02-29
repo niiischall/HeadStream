@@ -1,0 +1,22 @@
+{
+  "name": "headstream",
+  "version": "1.0.0",
+  "description": "Landing page for Headstream",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss assets/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nischalNikit/HeadStream.git"
+  },
+  "author": "nischalNikit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nischalNikit/HeadStream/issues"
+  },
+  "homepage": "https://github.com/nischalNikit/HeadStream#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
