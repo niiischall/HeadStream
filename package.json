@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nischalNikit/HeadStream#readme",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "npm-install-all": "^1.1.21"
   }
 }
