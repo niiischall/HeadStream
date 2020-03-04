@@ -190,6 +190,24 @@ body {
   .composition:hover .composition__photo:not(hover) {
     transform: scale(0.95); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  transition: transform .3s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #ff3366, #ba265c);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.8rem) scale(1.05); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -221,7 +239,6 @@ body {
   background-image: linear-gradient(to right bottom, rgba(255, 51, 102, 0.6), rgba(186, 38, 92, 0.6)), url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   position: relative; }
   .header__logobox {
     position: absolute;
@@ -240,3 +257,10 @@ body {
   background-color: #f7f7f7;
   padding: 20rem 0;
   margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(255, 51, 102, 0.6), rgba(186, 38, 92, 0.6)), url("../img/headStream-1.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative; }
