@@ -25,7 +25,7 @@
   
     &:active {
       transform: translateY(-.1rem);
-      box-shadow: 0 5rem 1rem rgba($color-black,.6);
+      box-shadow: 0 2.0rem 1rem rgba($color-black,.6);
     }
   
     &--white {
@@ -36,6 +36,11 @@
         background-color:$color-white;
       }
     
+    }
+
+    &--red {
+      background-color: $color-primary-light;
+      color: $color-white;
     }
   
     &--animated {
