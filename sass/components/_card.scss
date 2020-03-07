@@ -1,0 +1,144 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+
+    &__side {
+        //CARD STYLING
+
+        height: 50rem;
+        font-size: 2rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 5rem 40px rgba($color-black, .15);
+
+        //FRONT SIDE BASIC STYLING
+        &--front {
+            background-color: $color-white;
+        }
+
+        //BACK SIDE BASIC STYLING
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
+
+            }
+        }
+    }
+
+    //FRONT SIDE ON HOVER
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    //BACK SIDE ON HOVER
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+
+    //FRONT PICTURE STYLING
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: color;
+
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark), url("../img/headstream-6.jpg");
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark),  url("../img/headStream-7.jpg");
+        }
+
+        &--3 {
+            background-image:linear-gradient(to right bottom, $color-blue-light, $color-blue-dark), url("../img/headStream-8.jpg");
+        }
+    }
+
+    //FRONT HEADING STYLING
+    &__heading {
+        font-size: 2.0rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 18rem;
+        right: 2rem;
+        width: 75%;
+    }
+
+    &__heading-span {
+        padding: 1rem;
+        font-weight: 400;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-orange-light,.85), 
+            rgba($color-orange-dark,.85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-green-light,.85), 
+            rgba($color-green-dark,.85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-blue-light,.85), 
+            rgba($color-blue-dark,.85));
+        }
+
+    }
+
+    //FRONT DETAILS LIST STYLING
+    &__details {
+        padding: 2.5rem;
+        
+        ul{
+            width: 80%;
+            margin: 0 auto;
+            li{
+                list-style: none;
+                text-align: center;
+                padding: 1rem;
+                color: $color-primary-light;
+               
+
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
+    }
+
+    //BACK SIDE STYLING
+    &__cta {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }    
+}
