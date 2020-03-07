@@ -100,6 +100,19 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .5; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -183,7 +196,7 @@ body {
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 5rem 40px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 5rem 40px rgba(255, 51, 102, 0.15); }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
@@ -293,6 +306,48 @@ body {
   .feature-box:hover {
     transform: translateY(-1.8rem) scale(1.05); }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+  padding: 6rem;
+  padding-left: 9rem;
+  box-shadow: 0 3rem 6rem rgba(186, 38, 92, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  font-size: 1.6rem; }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem);
+    position: relative; }
+  .story__image {
+    height: 100%;
+    transform: translate(-5rem) scale(1.4);
+    transition: all .2s; }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .2s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__image {
+    transform: translate(-5rem) scale(1);
+    filter: blur(3px) brightness(50%); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -353,3 +408,7 @@ body {
 .section-artists {
   background-color: #f7f7f7;
   padding: 15rem 0; }
+
+.section-stories {
+  padding: 5rem 0;
+  position: relative; }
