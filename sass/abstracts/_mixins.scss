@@ -5,3 +5,42 @@
         clear: both;
     }
 }
+
+/*
+Media Queries :-
+
+0-600 px    : Phone
+600-900 px  : Tablet-Potrait  
+900-1200 px : Tablet-Landscape
+1800+ px    : Big Desktop
+
+1em = 16px  : For Browser Adaptability
+
+*/
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media(max-width: 37.5em)
+        { 
+            @content 
+        };   
+    }
+
+    @if $breakpoint == tab-port {
+        @media(max-width: 56.25em){
+            @content
+        };
+    }
+
+    @if $breakpoint == tab-land {
+        @media(max-width: 75em){
+            @content
+        };
+    }
+
+    @if $breakpoint == big-desk {
+        @media(min-width: 112.5em){
+            @content
+        }
+    }
+}
