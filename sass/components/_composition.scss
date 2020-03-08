@@ -10,19 +10,43 @@
         transition: all .2s;
         outline-offset: 2rem;
 
+        @include respond(tab-port){
+          float:left;
+          width: 33.33%;
+          box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        }
+
         &--p1 {
           left: 0;
           top: -2rem;
+
+
+          @include respond(tab-port){
+            top: 50%;
+            left: 30%;
+            width: 70%;
+           
+            
+          }
         }
 
         &--p2 {
           right:0;
           top: 2rem;
+
+          @include respond(tab-port){
+             display:none;
+          }
         }
 
         &--p3 {
-          left: 25%;
+          left: 20%;
           top: 10rem;
+
+          @include respond(tab-port){
+            display:none;
+           
+         }
         }
     
         &:hover {
@@ -30,6 +54,10 @@
             transform: scale(1.05) translateY(5px);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
+
+            @include respond(tab-port){
+              transform: none;
+            }
         }
     }
 
