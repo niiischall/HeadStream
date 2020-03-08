@@ -4,59 +4,73 @@
     font-size: 1.4rem;
     position: relative;
 
-    &__logo-box {
-        width: 15rem;
-        height: auto;
-        position: absolute;
+    @include respond(tab-port){
+        padding: 8rem 0;
+    }
 
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 8rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 6rem;
+        }
+
+        
     }
 
     &__logo {
-        width: 25rem;
+        width: 30rem;
+        height: auto;
     }
 
     &__navigation {
  
-        padding-top: 2rem;
         display: inline-block;
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
 
     }
 
     &__list {
-        border-top: 2px solid $color-grey-dark;
         list-style: none;
-        position: absolute;
-        top: 20rem;
-        left: 10rem;
     }
 
     &__item {
         display: inline-block;
-       
 
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-right: 1.5rem;
         }
     }
 
     &__copyright {
-        text-transform: uppercase;
+      
         border-top: 2px solid $color-grey-dark;
-        color: $color-grey-light-1;
-        position: absolute;
-        right: 10rem;
-        top: 20rem;
+        padding-top: 2rem;
+        width: 80%;
+        float: right;
+      
+        @include respond(tab-port) {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
     }
 
     &__link {
         &:link,
         &:visited {
             color: $color-grey-light-1;
+            background-color: $color-grey-dark-3;
             text-decoration: none;
-            text-tranform: uppercase;
+            text-transform: uppercase;
+            display: inline-block;
             transition: all .2s;
         }
 
