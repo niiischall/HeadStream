@@ -5,3 +5,42 @@
         clear: both;
     }
 }
+
+@mixin centering {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//Media Query Manager
+/*
+    CSS Breakpoints:
+    1. Phone: 0-600px
+    2. Tab-port: 600-900 px
+    3. Tab-Landscape: 900-1200 px
+    4. Desktop: 1200+ px
+*/
+
+@mixin respond($breakpoint)
+{
+    @if $breakpoint == phone {
+        @media(max-width: 37.5em){
+            @content
+        }
+    }
+    @if $breakpoint == tab-port {
+        @media(max-width: 56.25em){
+            @content
+        }
+    }
+    @if $breakpoint == tab-land {
+        @media(max-width: 75em){
+            @content
+        }
+    }
+    @if $breakpoint == desktop {
+        @media(min-width: 112.5em){
+            @content
+        }
+    }
+}
