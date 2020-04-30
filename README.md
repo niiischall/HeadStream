@@ -26,7 +26,6 @@ This is a homepage for a Video Streaming Platform, inspired by the likes of Yout
    2. Use 'npm install npm-install-all' to download all the npm packages for SASS compilation.
    3. Use 'npm run compile:sass' to run the SASS compiler.
    4. Open 'index.html' in the browser.
-   5. Alternatively, check out 'https://fervent-saha-ad3aeb.netlify.com/' for the already deployed version of this application.
    
 
 4. Q).Why SASS framework has been used in this project ?
