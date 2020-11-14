@@ -1,5 +1,11 @@
 .row {
     max-width: $grid-width;
+
+    @include respond(tab-port){
+       max-width: 50rem;
+       padding: 3rem;
+    }
+
     margin: 0 auto;
 
      
@@ -17,6 +23,7 @@
         }
     }    
 
+  
     @include clearfix;
 
     [class^= "col-"] {

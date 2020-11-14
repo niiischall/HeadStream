@@ -146,6 +146,9 @@ body {
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-top-big {
+      margin-bottom: 5rem; } }
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
@@ -323,20 +326,39 @@ body {
     z-index: 10;
     transition: all .2s;
     outline-offset: 2rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        width: 33.33%;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p1 {
+          top: 50%;
+          left: 30%;
+          width: 70%; } }
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p2 {
+          display: none; } }
     .composition__photo--p3 {
-      left: 25%;
+      left: 20%;
       top: 10rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p3 {
+          display: none; } }
     .composition__photo:hover {
       outline: 1.5rem solid #ff3366;
       transform: scale(1.05) translateY(5px);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
+      @media (max-width: 56.25em) {
+        .composition__photo:hover {
+          transform: none; } }
   .composition:hover .composition__photo:not(hover) {
     transform: scale(0.95); }
 
@@ -405,6 +427,10 @@ body {
 .form__radio-group {
   width: 45%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-label {
   font-size: 2rem;
@@ -516,6 +542,11 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 3px;
   font-size: 1.6rem; }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -550,8 +581,14 @@ body {
 
 .footer {
   background-color: #333;
+<<<<<<< HEAD:dist/css/style.comp.css
   padding: 10rem;
   font-size: 1.4rem; }
+=======
+  padding: 15rem;
+  font-size: 1.4rem;
+  position: relative; }
+>>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
   @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
@@ -562,12 +599,21 @@ body {
       .footer__logo-box {
         margin-bottom: 6rem; } }
   .footer__logo {
+<<<<<<< HEAD:dist/css/style.comp.css
     width: 15rem;
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
+=======
+    width: 30rem;
+    height: auto; }
+  .footer__navigation {
+    display: inline-block;
+    border-top: 1px solid #777;
+    padding-top: 2rem; }
+>>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
     @media (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
@@ -826,11 +872,23 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 45%, transparent 55%), url("../img/headStream-5.jpg");
-  background-size: cover;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 45%, transparent 50%), url(../img/headStream-5.jpg);
+  background-size: 100%;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  height: 50rem; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 45%, transparent 65%), url(../img/headStream-5.jpg);
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
