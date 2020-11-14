@@ -1,21 +1,9 @@
 /*
-<<<<<<< HEAD:dist/css/style.comp.css
     CSS Breakpoints:
     1. Phone: 0-600px
     2. Tab-port: 600-900 px
     3. Tab-Landscape: 900-1200 px
     4. Desktop: 1200+ px
-=======
-Media Queries :-
-
-0-600 px    : Phone
-600-900 px  : Tablet-Potrait  
-900-1200 px : Tablet-Landscape
-1800+ px    : Big Desktop
-
-1em = 16px  : For Browser Adaptability
-
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
 */
 @keyframes moveInLeft {
   0% {
@@ -53,39 +41,22 @@ Media Queries :-
   box-sizing: inherit; }
 
 html {
-<<<<<<< HEAD:dist/css/style.comp.css
   font-size: 62.5%; }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
-=======
-  font-size: 62.5%;
-  /*@include respond(phone){
-      font-size: 50%;
-    }*/ }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-<<<<<<< HEAD:dist/css/style.comp.css
   @media (max-width: 37.5em) {
     html {
       font-size: 30%; } }
 
 body {
   box-sizing: border-box; }
-=======
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
-
-body {
-  box-sizing: border-box;
-  padding: 3rem; }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -109,12 +80,8 @@ body {
     animation: moveInLeft 1s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-<<<<<<< HEAD:dist/css/style.comp.css
         letter-spacing: 1rem;
         font-size: 4rem; } }
-=======
-        letter-spacing: .5rem; } }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -169,11 +136,7 @@ body {
   margin-bottom: 4rem !important; }
   @media (max-width: 56.25em) {
     .u-margin-bottom-medium {
-<<<<<<< HEAD:dist/css/style.comp.css
       margin-bottom: 3rem !important; } }
-=======
-      margin-bottom: 3rem; } }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -618,14 +581,11 @@ body {
 
 .footer {
   background-color: #333;
-<<<<<<< HEAD:dist/css/style.comp.css
   padding: 10rem;
   font-size: 1.4rem; }
-=======
-  padding: 15rem;
-  font-size: 1.4rem;
-  position: relative; }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
@@ -636,21 +596,18 @@ body {
       .footer__logo-box {
         margin-bottom: 6rem; } }
   .footer__logo {
-<<<<<<< HEAD:dist/css/style.comp.css
     width: 15rem;
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;
-    display: inline-block; }
-=======
-    width: 30rem;
-    height: auto; }
-  .footer__navigation {
     display: inline-block;
     border-top: 1px solid #777;
     padding-top: 2rem; }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
     @media (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
@@ -662,7 +619,6 @@ body {
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
   .footer__copyright {
-<<<<<<< HEAD:dist/css/style.comp.css
     display: inline-block;
     border-top: 1px solid #777;
     color: #f7f7f7;
@@ -673,17 +629,6 @@ body {
       .footer__copyright {
         width: 100%;
         float: none; } }
-=======
-    border-top: 2px solid #777;
-    padding-top: 2rem;
-    width: 80%;
-    float: right; }
-    @media (max-width: 56.25em) {
-      .footer__copyright {
-        width: 100%;
-        float: none;
-        text-align: center; } }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     background-color: #333;
@@ -702,11 +647,11 @@ body {
   @media (max-width: 56.25em) {
     .row {
       max-width: 50rem;
-<<<<<<< HEAD:dist/css/style.comp.css
-      padding: 0 3rem; } }
-=======
       padding: 3rem; } }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media (max-width: 56.25em) {
@@ -772,24 +717,12 @@ body {
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-<<<<<<< HEAD:dist/css/style.comp.css
   text-align: center;
   cursor: pointer; }
   @media (max-width: 56.25em) {
     .navigation__button {
       top: 3.5rem;
       right: 3.5rem; } }
-=======
-  text-align: center; }
-  @media (max-width: 56.25em) {
-    .navigation__button {
-      top: 4rem;
-      right: 4rem; } }
-  @media (max-width: 37.5em) {
-    .navigation__button {
-      top: 3rem;
-      right: 3rem; } }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
 
 .navigation__background {
   height: 6rem;
@@ -805,17 +738,10 @@ body {
     .navigation__background {
       top: 4.5rem;
       right: 4.5rem; } }
-<<<<<<< HEAD:dist/css/style.comp.css
   @media (max-width: 56.25em) {
     .navigation__background {
       top: 4rem;
       right: 4rem; } }
-=======
-  @media (max-width: 37.5em) {
-    .navigation__background {
-      top: 3rem;
-      right: 3rem; } }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
 
 .navigation__nav {
   height: 100vh;
@@ -907,14 +833,10 @@ body {
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
-<<<<<<< HEAD:dist/css/style.comp.css
       padding: 25rem 0; } }
   @media (max-width: 37.5em) {
     .section-about {
       padding: 40rem 0; } }
-=======
-      padding: 20rem; } }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
 
 .section-features {
   padding: 20rem 0;
@@ -924,41 +846,25 @@ body {
   position: relative; }
   @media (max-width: 56.25em) {
     .section-features {
-<<<<<<< HEAD:dist/css/style.comp.css
       padding: 15rem 0; } }
-=======
-      padding: 10rem; } }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
 
 .section-artists {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0; }
   @media (max-width: 56.25em) {
     .section-artists {
-<<<<<<< HEAD:dist/css/style.comp.css
       padding: 20rem 0; } }
-=======
-      padding: 25rem 0 15rem 0; } }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
 
 .section-stories {
   padding: 15rem 0;
   position: relative; }
   @media (max-width: 56.25em) {
     .section-stories {
-<<<<<<< HEAD:dist/css/style.comp.css
       padding: 15rem 0; } }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, rgba(255, 51, 102, 0.6), rgba(186, 38, 92, 0.6)); }
-=======
-      padding: 10rem 0; } }
-
-.section-book {
-  padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #ff3366, #ba265c); }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
   @media (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }
