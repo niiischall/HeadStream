@@ -581,14 +581,11 @@ body {
 
 .footer {
   background-color: #333;
-<<<<<<< HEAD:dist/css/style.comp.css
   padding: 10rem;
   font-size: 1.4rem; }
-=======
-  padding: 15rem;
-  font-size: 1.4rem;
-  position: relative; }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
@@ -599,21 +596,18 @@ body {
       .footer__logo-box {
         margin-bottom: 6rem; } }
   .footer__logo {
-<<<<<<< HEAD:dist/css/style.comp.css
     width: 15rem;
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;
-    display: inline-block; }
-=======
-    width: 30rem;
-    height: auto; }
-  .footer__navigation {
     display: inline-block;
     border-top: 1px solid #777;
     padding-top: 2rem; }
->>>>>>> b70da34b0c8c02d8ca8bf8f79ef252d6a1fd4653:css/style.css
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
     @media (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
@@ -650,6 +644,10 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 3rem; } }
   @media (max-width: 56.25em) {
     .row {
       max-width: 50rem;
