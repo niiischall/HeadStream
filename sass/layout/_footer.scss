@@ -22,7 +22,8 @@
     }
 
     &__logo {
-        width:15rem;
+        width:25rem;
+        height: 25rem;
         height:auto;
     }
 
@@ -42,9 +43,6 @@
             width: 100%;
             text-align: center;
         }
-    
-
-
     }
 
     &__list {
@@ -75,8 +73,7 @@
     }
 
     &__link {
-        &:link,
-        &:visited{
+        &:link{
             color:$color-grey-light-1;
             background-color:$color-grey-dark-3;
             text-decoration:none;
@@ -86,6 +83,7 @@
         }
 
         &:hover,
+        &:visited,
         &:active{
             color:$color-primary-light;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
