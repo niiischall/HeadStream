@@ -53,7 +53,7 @@ html {
       font-size: 50%; } }
   @media (max-width: 37.5em) {
     html {
-      font-size: 30%; } }
+      font-size: 47.5%; } }
 
 body {
   box-sizing: border-box; }
@@ -623,6 +623,7 @@ body {
     display: inline-block;
     border-top: 1px solid #777;
     color: #f7f7f7;
+    text-align: center;
     padding-top: 2rem;
     width: 80%;
     float: left; }
