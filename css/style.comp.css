@@ -53,7 +53,7 @@ html {
       font-size: 50%; } }
   @media (max-width: 37.5em) {
     html {
-      font-size: 30%; } }
+      font-size: 47.5%; } }
 
 body {
   box-sizing: border-box; }
@@ -596,7 +596,8 @@ body {
       .footer__logo-box {
         margin-bottom: 6rem; } }
   .footer__logo {
-    width: 15rem;
+    width: 25rem;
+    height: 25rem;
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #777;
@@ -622,6 +623,7 @@ body {
     display: inline-block;
     border-top: 1px solid #777;
     color: #f7f7f7;
+    text-align: center;
     padding-top: 2rem;
     width: 80%;
     float: left; }
@@ -629,14 +631,14 @@ body {
       .footer__copyright {
         width: 100%;
         float: none; } }
-  .footer__link:link, .footer__link:visited {
+  .footer__link:link {
     color: #f7f7f7;
     background-color: #333;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
     transition: all .2s; }
-  .footer__link:hover, .footer__link:active {
+  .footer__link:hover, .footer__link:visited, .footer__link:active {
     color: #ff3366;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
